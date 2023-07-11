@@ -1,5 +1,5 @@
 const tabla  =  document.querySelector('#lista-usuario tbody')
-function cargarUsuario(){
+function cargarAPI(){
     fetch('https://pokeapi.co/api/v2/pokemon/ditto')
         .then(response => response.json())
         .then(resp =>{
@@ -17,4 +17,4 @@ function cargarUsuario(){
         });
         })
 }
-cargarUsuario()
+cargarAPI()
